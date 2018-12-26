@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      autodiff实现
-subtitle:   iOS定时器详解
+subtitle:   cse599w
 date:       2018-12-26
 author:     Dzw
 header-img: img/autodiff.png
