@@ -1,5 +1,5 @@
-```yaml
 ---
+​---
 layout:     post
 title:      autodiff实现
 subtitle:   iOS定时器详解
@@ -10,8 +10,8 @@ catalog: 	 true
 tags:
     - cse599w
     - autodiff
+​---
 ---
-```
 
 # Autodiff算法的思想
 
