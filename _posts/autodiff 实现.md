@@ -17,15 +17,15 @@ tags:
 
 一般的思想是每次都计算一下梯度，不过这样会很繁琐，在考虑反向传播的时候还要考虑前向传播。
 
-![](http://dzwduan.github.io/img/forward0.PNG)
+![](https://github.com/dzwduan/dzwduan.github.io/tree/master/img/forward0.PNG)
 
 一种改进如下，根据相邻结点来求梯度，即链式法则。
 
-![](http://dzwduan.github.io/img/forward.png)
+![](https://github.com/dzwduan/dzwduan.github.io/tree/master/img/forward.png)
 
 他的算法如下：
 
-![](http://dzwduan.github.io/img/autodiff2.png)
+![](https://github.com/dzwduan/dzwduan.github.io/tree/master/img/autodiff2.png)
 
 
 
@@ -47,14 +47,7 @@ tags:
 
 ![img](https://pic2.zhimg.com/80/v2-c7e2d15d3fbd688a9a720ad5ef053209_hd.jpg)
 
-> 下面结合上图来讲一下。node_*to_grad列表里面共包含如下。*左边是输入,右边是对应的梯度， ![X_{2}](https://www.zhihu.com/equation?tex=X_%7B2%7D) 传值给了 ![X_{3}](https://www.zhihu.com/equation?tex=X_%7B3%7D) 和 ![X_{4}](https://www.zhihu.com/equation?tex=X_%7B4%7D) 所以有两个梯度，需要进行累加。
-> ![\bar{X_{4}}](https://www.zhihu.com/equation?tex=%5Cbar%7BX_%7B4%7D%7D) = 1
-> ![X_{4}](https://www.zhihu.com/equation?tex=X_%7B4%7D) = ![X_{3}](https://www.zhihu.com/equation?tex=X_%7B3%7D) * ![X_{2}](https://www.zhihu.com/equation?tex=X_%7B2%7D) ==> ![dX_{4}/dX_{2}](https://www.zhihu.com/equation?tex=dX_%7B4%7D%2FdX_%7B2%7D) = ![X_{3}](https://www.zhihu.com/equation?tex=X_%7B3%7D) , ![dX_{4}/dX_{3}=X_{2}](https://www.zhihu.com/equation?tex=dX_%7B4%7D%2FdX_%7B3%7D%3DX_%7B2%7D) 
-> ==> ![\bar{X_{2}}^1](https://www.zhihu.com/equation?tex=%5Cbar%7BX_%7B2%7D%7D%5E1) = ![ X_{3}](https://www.zhihu.com/equation?tex=+X_%7B3%7D) , ![\bar{X_{3}}](https://www.zhihu.com/equation?tex=%5Cbar%7BX_%7B3%7D%7D) = ![X_{2}](https://www.zhihu.com/equation?tex=X_%7B2%7D) ,
-> ![X_{3}](https://www.zhihu.com/equation?tex=X_%7B3%7D) = ![X_{2} + 1](https://www.zhihu.com/equation?tex=X_%7B2%7D+%2B+1) ==> ![\bar{X_{2}}^2](https://www.zhihu.com/equation?tex=%5Cbar%7BX_%7B2%7D%7D%5E2) = 单位矩阵
-> ![\bar{X_{2}}= \bar{X_{2}}^1+\bar{X_{2}}^2](https://www.zhihu.com/equation?tex=%5Cbar%7BX_%7B2%7D%7D%3D+%5Cbar%7BX_%7B2%7D%7D%5E1%2B%5Cbar%7BX_%7B2%7D%7D%5E2) 
-> ![X_{2} = e^{X_{1}}](https://www.zhihu.com/equation?tex=X_%7B2%7D+%3D+e%5E%7BX_%7B1%7D%7D) ==> ![dX_{2}/dX_{1}=X_{2}](https://www.zhihu.com/equation?tex=dX_%7B2%7D%2FdX_%7B1%7D%3DX_%7B2%7D) 
-> ==> ![\bar{X_{1}}](https://www.zhihu.com/equation?tex=%5Cbar%7BX_%7B1%7D%7D) = ![X_{2}](https://www.zhihu.com/equation?tex=X_%7B2%7D)
+![](https://github.com/dzwduan/dzwduan.github.io/tree/master/img/autodiff3.PNG)
 
 ## 总结：
 
