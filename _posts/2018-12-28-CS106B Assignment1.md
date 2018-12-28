@@ -1,4 +1,3 @@
-```yaml
 ---
 layout:     post
 title:      CS106B Assignment1
@@ -11,7 +10,8 @@ tags:
     - cpp
     - algorithm
 ---
-```
+
+
 
 
 
