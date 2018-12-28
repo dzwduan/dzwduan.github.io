@@ -1,4 +1,4 @@
-```
+```yaml
 ---
 layout:     post
 title:      CS106B Assignment1
@@ -16,6 +16,10 @@ tags:
 
 
 # CS106B Assignment1
+
+
+
+
 
 ## problem one: Rosencrantz and Guildenstern Flip Heads
 
