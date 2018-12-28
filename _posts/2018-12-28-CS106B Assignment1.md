@@ -73,7 +73,7 @@ in below part,15 corresponds to 6choose2.
 it express solutions in pascal's triangle form
 ```
 
-![](/img/cs106b/%5CUsers%5C10184%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1545991699538.png)
+![](/img/cs106b/1.png)
 
 ```
 code:
