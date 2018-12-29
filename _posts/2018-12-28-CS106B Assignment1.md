@@ -65,6 +65,8 @@ void flipHeads() {
 
 
 
+
+
 ## problem two:combinations and pascal's triangle
 
 ```
@@ -92,6 +94,65 @@ int nChooseK(int n, int k) {
 ## problem three:stack overflows
 
 ```
+just imitate a recursive sequence
+```
+
+
+
+
+
+## problem four:Implementing Numeric Conversions
+
+```
+use recursion to convert int to string and convert string to int.
+hint: 
+1.recommend split a number into  pieces by separating the last(the 7 in 137) rather than the first digit(the 1 in 137)
+2.char ch = char(digit + '0')       from int tochar
+  int val = ch - '0'               from char to int
+  string str(1, ch);               form char to string
 
 ```
 
+```
+
+int stringToInt(string str) {
+	// [TODO: fill in the code]
+	int num = 0;
+	if (str.empty())
+		return num;
+	if (str.length() == 1 && str[0] != '-')
+		return str[0] - '0';
+	if (str.length() == 1 && str[0] == '-')
+		return num;
+	if (str.length() > 1 && str[0] != '-'){
+		int tmp = str[str.length() - 1] - '0';
+		return stringToInt(str.substr(0, str.length() - 1))*10 + tmp;
+	}
+	if (str.length() > 1 && str[0] == '-'){
+		int tmp = str[str.length() - 1] - '0';
+		return stringToInt(str.substr(0, str.length() - 1)) * 10 - tmp;
+	}
+}
+
+string intToString(int n) {
+	// [TODO: fill in the code]
+	string str;
+	if (n >= 0 && n<10){
+		str = n + '0';
+		return str;
+	}
+	if (n>10){
+		char ch = n % 10 + '0';
+		return intToString(n / 10) + ch;
+	}
+	if (n < 0){
+		return "-" + intToString(abs(n));
+	}
+}
+```
+
+
+
+
+
+## problem five: the flesch-kincaid grade-level test
