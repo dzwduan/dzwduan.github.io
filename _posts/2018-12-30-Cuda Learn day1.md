@@ -4,7 +4,7 @@ title:      Cuda Learn day 1
 subtitle:   cuda lesson
 date:       2018-12-30
 author:     Dzw
-header-img: img/cuda/1.png
+header-img: img/cuda/3.png
 catalog: 	 true
 tags:
     - cuda
@@ -186,3 +186,8 @@ void your_rgba_to_greyscale(const uchar4 * const h_rgbaImage, uchar4 * const d_r
 }
 ```
 
+
+
+cs344 Unit1 finished
+
+Pmpp Chapter2 finished
