@@ -1,8 +1,7 @@
-```yaml
 ---
 layout:     post
 title:      Cuda Learn day 1
-subtitle:   iOS定时器详解
+subtitle:   cuda lesson
 date:       2018-12-30
 author:     Dzw
 header-img: img/cuda/1.png
@@ -10,7 +9,6 @@ catalog: 	 true
 tags:
     - cuda
 ---
-```
 
 
 
