@@ -16,13 +16,19 @@ tags:
 
 
 
+
+
 ## kernel functions and threading
 
-![](/image/cuda/1.png)
+![](/img/cuda/1.png)
+
+
+
+
 
 ## kernel launch
 
-![](/image/cuda/2.png)
+![](/img/cuda/2.png)
 
 
 
@@ -47,6 +53,10 @@ int vecAdd(float* A, float *B, float *C, int c){
 
 
 ```
+
+
+
+
 
 
 
@@ -120,6 +130,8 @@ Answer: (C)
 
 Explanation: See Lecture 2.2 slides.2.8 EXERCISES
 ```
+
+
 
 
 
