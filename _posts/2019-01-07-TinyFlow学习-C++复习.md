@@ -68,17 +68,7 @@ classname (const classname &obj){
 }
 ```
 
-### C++接口（
-
-```
-
-```
-
-### 抽象类）
-
-```
-
-```
+### C++接口（抽象类）
 
 ### C++多态
 
@@ -297,7 +287,7 @@ int *const &rpConstPoint = constPoint;          //对常量指针的引用,邦�
 
 ```c++
 //typedef 常见形式
-
+typedef existing_type new_type_name ;
 int i;
 typedef int myInt;
 myInt j;
