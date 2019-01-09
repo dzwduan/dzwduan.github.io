@@ -117,9 +117,10 @@ int posix_memalign (void **memptr,
 
 ### namespace
 
-```
+```c++
 namespace内的成员都位于相同的作用域中，无须特殊符号即可相互访问，而从namespace外访问他们就需要显式符号。
 using std::string //用 string 表示 std::string
+
 在一个函数中可以安全使用using指示以方便符号表示，但是对于全局using指示必须谨慎，避免过度使用造成名字冲突。
 ```
 
@@ -314,4 +315,10 @@ pFun = glFun;
 ```
 
 
+
+### define
+
+```c++
+#define 标识符 字符串 //用标识符来取代字符串
+```
 
