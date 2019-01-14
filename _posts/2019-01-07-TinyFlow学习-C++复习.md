@@ -322,3 +322,12 @@ pFun = glFun;
 #define 标识符 字符串 //用标识符来取代字符串
 ```
 
+
+
+### Protected
+
+```
+一个类使用protected来声明是希望 与派生类分享但不想被其他公共访问使用的成员。
+所以protected看作是public private的中间产物。
+```
+
