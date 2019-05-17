@@ -1,3 +1,4 @@
+---
 layout:     post
 title:      15-213-c-programming
 subtitle:   c-learn
@@ -8,6 +9,8 @@ catalog: 	 true
 tags:
     - C
     - csapp
+
+---
 
 
 
